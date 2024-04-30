@@ -1,6 +1,14 @@
-# WTechTechnicalAssessment
+# W-TECH Technical Assessment
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.6.
+
+### Descripción
+- Este proyecto desarrollado en Angular replica los elementos relacionados a continuación de un ejemplo de plataforma OVAs (Objetos Virtuales de Aprendizaje).
+1. Menú lateral izquierdo con Introducción y explicación
+2. Mapa Conceptual
+3. Pregunta de selección múltiple
+
+- A continuación encontrará instrucciones para instalar y ejecutar el proyecto.
 
 ## Development server
 
