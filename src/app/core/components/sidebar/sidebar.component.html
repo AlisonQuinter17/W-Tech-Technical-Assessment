@@ -1,0 +1,10 @@
+<div class="sidebar">
+  <div class="menu-item" (click)="toggleDropdown('introduccion')">Introducción</div>
+  <div *ngIf="dropdownVisible === 'introduccion'">
+    <div class="menu-subitem" (click)="onSelectOption('actividad1')">Actividad 1</div>
+    <div class="menu-subitem" (click)="onSelectOption('actividad2')">Actividad 2</div>
+  </div>
+  <div class="menu-item" (click)="toggleDropdown('explicacion')">Explicación</div>
+  <div *ngIf="dropdownVisible === 'explicacion'">
+  </div>
+</div>

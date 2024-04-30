@@ -1,0 +1,145 @@
+.content {
+  margin-left: 250px;
+  height: 1000px;
+  background-color: rgb(9, 181, 255);
+  padding: 20px;
+}
+
+.actividad-1 {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff;
+  padding: 0px 20px 20px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0.5, 0.5, 0.5, 0.5);
+  border: 2px solid rgb(9, 181, 255);
+  height: 90%;
+}
+
+.actividad-2 {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff;
+  padding: 0px 20px 20px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0.5, 0.5, 0.5, 0.5);
+  border: 2px solid rgb(9, 181, 255);
+}
+
+.title {
+  position: relative;
+  border-bottom: 2px solid rgb(9, 181, 255);
+  line-height: 40px;
+  color: rgb(9, 181, 255);
+}
+
+.question {
+  list-style-type: disc;
+  margin-top: 20px;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+}
+
+.button-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: rgb(9, 181, 255);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1f2124;
+}
+
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+/* Mapa conceptual */
+.diagrama {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.nivel-1 {
+  font-weight: bold;
+  margin: 20px;
+  border: 2px solid rgb(9, 181, 255);
+  width: 50%;
+  padding: 10px;
+}
+
+.contenedor-niveles {
+  width: 50%;
+}
+
+.nivel-titulo {
+  position: relative;
+}
+
+.nivel {
+  border: 2px solid rgb(9, 181, 255);
+  padding: 8px;
+  margin: 0 20px;
+  position: relative;
+  margin-left: 60%;
+}
+
+.titulo-nivel {
+  font-weight: bold;
+  border-bottom: 2px solid rgb(9, 181, 255);
+}
+
+.explicacion-nivel {
+  margin-top: 10px;
+}
+
+.linea-horizontal {
+  position: absolute;
+  top: 50%;
+  left: -37px;
+  width: 37px;
+  border-top: 2px solid rgb(9, 181, 255);
+  height: 2px;
+}
+
+.linea-vertical {
+  position: absolute;
+  height: 170px;
+  border-left: 2px solid rgb(9, 181, 255);
+  width: 2px;
+  top: 74%;
+  right: 50%;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+
+  .sidebar a {
+    font-size: 18px;
+  }
+}

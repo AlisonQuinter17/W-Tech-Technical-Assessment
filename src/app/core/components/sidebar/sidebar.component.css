@@ -1,0 +1,45 @@
+.sidebar {
+  height: 100vh;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #1f2124;
+  box-shadow: 0 4px 8px rgba(0.5, 0.5, 0.5, 0.5);
+  overflow-x: hidden;
+}
+
+.menu-item {
+  cursor: pointer;
+  padding:  6px 6px 6px 20px;
+  line-height: 35px;
+  color: #fff;
+  background: none;
+  text-decoration: none;
+  list-style: none;
+  font-size: 18px;
+  border-bottom: 1.5px solid rgb(255, 255, 255);
+}
+
+.menu-item:hover {
+  background-color: #131416;
+  color: rgb(9, 181, 255);
+  transition: 0.4s;
+}
+
+.menu-subitem {
+  cursor: pointer;
+  padding:  6px 6px 6px 20px;
+  display: block;
+  color: rgb(9, 181, 255);
+  background: none;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(219, 219, 219, 0.696);
+}
+
+.menu-subitem:hover {
+  background-color: rgb(9, 181, 255);
+  color: #131416;
+  transition: 0.4s;
+}

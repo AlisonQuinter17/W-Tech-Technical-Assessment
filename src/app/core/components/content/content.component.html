@@ -1,0 +1,84 @@
+<div class="content">
+  <div *ngIf="this.option === 'actividad1'" class="actividad-1">
+    <div class="title">Mapa Conceptual</div>
+    <div class="diagrama">
+      <div class="nivel-titulo">
+        <div class="nivel-1">Nivel 1</div>
+        <div class="linea-vertical"></div>
+      </div>
+      <div class="contenedor-niveles">
+        <div class="nivel">
+          <div class="titulo-nivel">Nivel 1.1</div>
+          <div class="explicacion-nivel">Explicación del Nivel 1.1</div>
+          <div class="linea-horizontal"></div>
+        </div>
+        <br>
+        <div class="nivel">
+          <div class="titulo-nivel">Nivel 1.2</div>
+          <div class="explicacion-nivel">Explicación del Nivel 1.2</div>
+          <div class="linea-horizontal"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="this.option === 'actividad2'" class="actividad-2">
+    <div class="title">Ejercicio 2</div>
+    <div>
+      <li class="question">{{ question1 }}</li>
+      <ul>
+        <li>
+          <input type="radio" id="q1a" name="question1" (change)="answer1 = 'A'">
+          <label for="q1a">a. Los argumentos deductivos se basan en premisas que garantizan la verdad de la
+            conclusión.</label>
+        </li>
+        <li>
+          <input type="radio" id="q1b" name="question1" (change)="answer1 = 'B'">
+          <label for="q1b">b. Los argumentos deductivos son siempre inválidos, mientras que los argumentos inductivos
+            son
+            siempre fuertes.</label>
+        </li>
+        <li>
+          <input type="radio" id="q1c" name="question1" (change)="answer1 = 'C'">
+          <label for="q1c">c. La diferencia radica en que los argumentos deductivos no requieren premisas, mientras que
+            los inductivos sí.</label>
+        </li>
+        <li>
+          <input type="radio" id="q1d" name="question1" (change)="answer1 = 'D'">
+          <label for="q1d">d. Los argumentos deductivos aseguran que la verdad de las premisas conduce necesariamente a
+            la
+            verdad de la conclusión, mientras que los argumentos inductivos otorgan un grado de probabilidad a la
+            conclusión.</label>
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <li class="question">{{ question2 }}</li>
+      <ul>
+        <li>
+          <input type="radio" id="q2a" name="question2" (change)="answer2 = 'A'">
+          <label for="q2a">a. La corrección de su presentación formal.</label>
+        </li>
+        <li>
+          <input type="radio" id="q2b" name="question2" (change)="answer2 = 'B'">
+          <label for="q2b">b. La claridad de su expresión.</label>
+        </li>
+        <li>
+          <input type="radio" id="q2c" name="question2" (change)="answer2 = 'C'">
+          <label for="q2c">c. La validez de los argumentos.</label>
+        </li>
+        <li>
+          <input type="radio" id="q2d" name="question2" (change)="answer2 = 'D'">
+          <label for="q2d">d. La pertinencia de los argumentos para justificar el punto central del escrito.</label>
+        </li>
+      </ul>
+    </div>
+    <div class="button-container">
+      <button (click)="checkAnswers()">Comprobar</button>
+    </div>
+    <div *ngIf="isCorrect !== null">
+      <p *ngIf="isCorrect" class="correct">Respuesta Correcta!</p>
+      <p *ngIf="!isCorrect" class="incorrect">Respuesta Incorrecta, intenta de nuevo.</p>
+    </div>
+  </div>
+</div>
